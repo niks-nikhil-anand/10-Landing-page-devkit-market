@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF8F5;
+  --foreground: #1F1F1E;
+  
+  --color-gold: #C5A880;
+  --color-gold-light: #E2D4C1;
+  --color-gold-dark: #A5865E;
+  --color-forest: #102E24;
+  --color-forest-light: #1A3E32;
+  --color-cream-light: #FDFCFB;
+  --color-cream-dark: #F3EFE9;
+}
+
+@theme {
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-forest: var(--color-forest);
+  --color-forest-light: var(--color-forest-light);
+  --color-cream-light: var(--color-cream-light);
+  --color-cream-dark: var(--color-cream-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom transitions and scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A5865E;
+}
+
+/* Elegant gold gradient glow and glassmorphism helpers */
+.glass-panel {
+  background: rgba(253, 252, 251, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #E2D4C1 0%, #C5A880 50%, #A5865E 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #A5865E 0%, #C5A880 50%, #E2D4C1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
