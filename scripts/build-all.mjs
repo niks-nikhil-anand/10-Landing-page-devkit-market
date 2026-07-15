@@ -28,7 +28,11 @@ const marketplaceResult = spawnSync(
   ["run", "build", "--workspace", "marketplace"],
   {
     cwd: root,
-    env: { ...process.env, NEXT_TELEMETRY_DISABLED: "1" },
+    env: {
+      ...process.env,
+      MARKETPLACE_STATIC_EXPORT: "1",
+      NEXT_TELEMETRY_DISABLED: "1",
+    },
     stdio: "inherit",
   },
 );
@@ -37,7 +41,7 @@ if (marketplaceResult.status !== 0) {
   process.exit(marketplaceResult.status ?? 1);
 }
 
-const marketplaceOutput = path.join(root, "marketplace", "dist");
+const marketplaceOutput = path.join(root, "marketplace", "out");
 if (!existsSync(marketplaceOutput)) {
   throw new Error("Static output was not generated for the marketplace homepage.");
 }
