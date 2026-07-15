@@ -1,0 +1,23 @@
+{
+  "name": "landing-page-devkit-market",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "ai-multi-agent-orchestration-platform",
+    "b2b-sales-funnel-lead-generation",
+    "cybersecurity-compliance",
+    "developer-api-infrastructure-tools",
+    "fractional-cfo-financial-advisory",
+    "intellectual-property-patent-law-firms",
+    "longevity-biohacking-dtc-brands",
+    "medical-spa-and-aesthetics-clinics",
+    "saas-waitlist-product-launch",
+    "telehealth-concierge-medicin"
+  ],
+  "scripts": {
+    "build": "node scripts/build-all.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
