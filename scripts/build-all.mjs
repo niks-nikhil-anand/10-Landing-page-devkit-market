@@ -20,7 +20,29 @@ const apps = [
 
 rmSync(outputDirectory, { recursive: true, force: true });
 mkdirSync(outputDirectory, { recursive: true });
-cpSync(path.join(root, "site"), outputDirectory, { recursive: true });
+
+console.log("\nBuilding marketplace homepage...");
+
+const marketplaceResult = spawnSync(
+  process.platform === "win32" ? "npm.cmd" : "npm",
+  ["run", "build", "--workspace", "marketplace"],
+  {
+    cwd: root,
+    env: { ...process.env, NEXT_TELEMETRY_DISABLED: "1" },
+    stdio: "inherit",
+  },
+);
+
+if (marketplaceResult.status !== 0) {
+  process.exit(marketplaceResult.status ?? 1);
+}
+
+const marketplaceOutput = path.join(root, "marketplace", "out");
+if (!existsSync(marketplaceOutput)) {
+  throw new Error("Static output was not generated for the marketplace homepage.");
+}
+
+cpSync(marketplaceOutput, outputDirectory, { recursive: true });
 
 for (const app of apps) {
   console.log(`\nBuilding ${app}...`);
@@ -47,4 +69,4 @@ for (const app of apps) {
   cpSync(appOutput, path.join(outputDirectory, app), { recursive: true });
 }
 
-console.log(`\nBuilt ${apps.length} landing pages into ${outputDirectory}`);
+console.log(`\nBuilt the marketplace and ${apps.length} landing pages into ${outputDirectory}`);
