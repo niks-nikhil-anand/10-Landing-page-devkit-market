@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: "/ai-multi-agent-orchestration-platform",
+  trailingSlash: true,
 };
 
 export default nextConfig;
