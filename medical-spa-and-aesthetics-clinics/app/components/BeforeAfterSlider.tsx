@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 
+const basePath = "/medical-spa-and-aesthetics-clinics";
+
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50); // percentage (0 to 100)
   const [isDragging, setIsDragging] = useState(false);
@@ -63,7 +65,7 @@ export default function BeforeAfterSlider() {
         {/* After Image (Base) */}
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/images/skin-after.jpg"
+            src={`${basePath}/images/skin-after.jpg`}
             alt="After treatment radiant skin"
             fill
             sizes="(max-width: 768px) 100vw, 650px"
@@ -84,7 +86,7 @@ export default function BeforeAfterSlider() {
           }}
         >
           <Image
-            src="/images/skin-before.jpg"
+            src={`${basePath}/images/skin-before.jpg`}
             alt="Before treatment skin issues"
             fill
             sizes="(max-width: 768px) 100vw, 650px"
