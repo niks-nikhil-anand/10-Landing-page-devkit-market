@@ -43,10 +43,11 @@ A production-ready collection of 10 responsive Next.js landing page templates fo
 
 ## Project architecture
 
-Each template remains an independent Next.js workspace. During the root production build, every app is exported with its own `basePath` and copied into a matching folder inside `dist/`.
+The marketplace homepage and each template are independent Next.js workspaces. During the root production build, the marketplace is exported to the root of `dist/`, while every template is exported with its own `basePath` and copied into a matching subfolder.
 
 ```text
 10-Landing-page-devkit-market/
+├── marketplace/
 ├── ai-multi-agent-orchestration-platform/
 ├── b2b-sales-funnel-lead-generation/
 ├── cybersecurity-compliance/
@@ -58,7 +59,6 @@ Each template remains an independent Next.js workspace. During the root producti
 ├── saas-waitlist-product-launch/
 ├── telehealth-concierge-medicin/
 ├── scripts/build-all.mjs
-├── site/
 ├── package.json
 └── vercel.json
 ```
@@ -98,17 +98,27 @@ npm install
 npm run build
 ```
 
-The command builds all 10 Next.js applications and creates a combined static website in `dist/`.
+The command builds the Next.js marketplace homepage and all 10 landing-page applications, then creates a combined static website in `dist/`.
+
+### Preview the complete marketplace locally
+
+```bash
+npm run dev
+```
+
+This builds and serves the complete marketplace at `http://localhost:3001/`, including every landing page under its production folder route. Use this command when testing card navigation.
+
+To work only on the marketplace homepage with Next.js hot reloading, use `npm run dev:marketplace`. The standalone homepage server does not serve the ten separate template workspaces.
 
 ### Preview the production website locally
 
-Use any static file server. For example:
+After building, you can restart the combined preview without rebuilding:
 
 ```bash
-python3 -m http.server 4173 --directory dist
+npm run preview
 ```
 
-Open `http://localhost:4173/` to browse the landing page directory.
+Open `http://localhost:3001/` to browse the landing page directory.
 
 ## Deploy to Vercel
 
@@ -123,7 +133,7 @@ The included [`vercel.json`](./vercel.json) configures:
 - Output directory: `dist`
 - Trailing-slash URLs for static folder routing
 
-After deployment, the root URL displays a directory linking to all 10 live landing pages.
+After deployment, the root URL displays the Next.js marketplace linking to all 10 live landing pages.
 
 ## Deploy to other static hosts
 
