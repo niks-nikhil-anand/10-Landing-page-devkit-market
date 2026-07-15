@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
+    "marketplace",
     "ai-multi-agent-orchestration-platform",
     "b2b-sales-funnel-lead-generation",
     "cybersecurity-compliance",
@@ -15,7 +16,10 @@
     "telehealth-concierge-medicin"
   ],
   "scripts": {
-    "build": "node scripts/build-all.mjs"
+    "build": "node scripts/build-all.mjs",
+    "dev": "npm run build && npm run preview",
+    "dev:marketplace": "npm run dev --workspace marketplace",
+    "preview": "node scripts/serve-dist.mjs"
   },
   "engines": {
     "node": ">=20.9.0"
