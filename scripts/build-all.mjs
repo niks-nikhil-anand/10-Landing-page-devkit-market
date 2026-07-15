@@ -37,7 +37,7 @@ if (marketplaceResult.status !== 0) {
   process.exit(marketplaceResult.status ?? 1);
 }
 
-const marketplaceOutput = path.join(root, "marketplace", "out");
+const marketplaceOutput = path.join(root, "marketplace", "dist");
 if (!existsSync(marketplaceOutput)) {
   throw new Error("Static output was not generated for the marketplace homepage.");
 }
