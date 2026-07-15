@@ -100,7 +100,7 @@ npm run build
 
 The command builds the Next.js marketplace homepage and all 10 landing-page applications, then creates a combined static website in `dist/`.
 
-For Vercel, keep the project Root Directory set to the repository root so the combined build includes the marketplace and all ten template routes. The standalone `marketplace/` workspace also supports Vercel's native Next.js output without a custom Output Directory.
+For Vercel, the recommended project Root Directory is the repository root. If an existing Vercel project uses `marketplace/` as its Root Directory, the workspace-level Vercel configuration runs the same combined repository build and stages all ten template routes in `marketplace/deploy/` automatically.
 
 ### Preview the complete marketplace locally
 
