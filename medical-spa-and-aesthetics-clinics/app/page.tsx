@@ -25,6 +25,8 @@ import BeforeAfterSlider from "./components/BeforeAfterSlider";
 import SkinQuiz from "./components/SkinQuiz";
 import BookingForm from "./components/BookingForm";
 
+const basePath = "/medical-spa-and-aesthetics-clinics";
+
 // Signature Treatment Data
 const TREATMENTS_DATA = [
   {
@@ -35,7 +37,7 @@ const TREATMENTS_DATA = [
     downtime: "2-3 days",
     price: "From $850",
     desc: "The gold standard in subdermal adipose remodeling. Fractional needles deliver radiofrequency energy deep into the skin, contracting fat, stimulating collagen, and tightening sagging skin.",
-    image: "/images/treatment-laser.jpg",
+    image: `${basePath}/images/treatment-laser.jpg`,
     benefits: ["Sharpens jawline definition", "Reduces deep acne scarring", "Lifts face & neck tissues"]
   },
   {
@@ -46,7 +48,7 @@ const TREATMENTS_DATA = [
     downtime: "None",
     price: "From $650",
     desc: "Restore youthful volumes and soften expressions. Our master physicians inject premium fillers and neurotoxins with micrometric precision, emphasizing facial harmony and natural movement.",
-    image: "/images/treatment-injectables.jpg",
+    image: `${basePath}/images/treatment-injectables.jpg`,
     benefits: ["Smooths forehead & eye wrinkles", "Restores high cheek contours", "Instant natural-looking results"]
   },
   {
@@ -57,7 +59,7 @@ const TREATMENTS_DATA = [
     downtime: "1-2 days",
     price: "From $350",
     desc: "A high-performance intense pulsed light (IPL) treatment that targets vascular anomalies, pigmentation, sun damage, and rosacea. Achieve an glass-like, beautifully even complexion.",
-    image: "/images/treatment-hydrafacial.jpg",
+    image: `${basePath}/images/treatment-hydrafacial.jpg`,
     benefits: ["Clears sun spots & pigmentation", "Calms redness & broken capillaries", "Reveals radiant skin luminosity"]
   },
   {
@@ -68,7 +70,7 @@ const TREATMENTS_DATA = [
     downtime: "None",
     price: "From $400",
     desc: "A painless, 650-microsecond medical laser that treats acne, rosacea, melasma, and fine lines. Safe for all skin tones and does not require skin cooling or contact gels.",
-    image: "/images/treatment-laser.jpg",
+    image: `${basePath}/images/treatment-laser.jpg`,
     benefits: ["Eliminates acne-causing bacteria", "Zero peeling or social downtime", "Stimulates deep skin renewal"]
   },
   {
@@ -79,7 +81,7 @@ const TREATMENTS_DATA = [
     downtime: "None",
     price: "From $250",
     desc: "A multi-step vortex extraction, physical peel, and nutrient infusion system. Combines patented suction technology with super-serums to hydrate, polish, and extract impurities.",
-    image: "/images/treatment-hydrafacial.jpg",
+    image: `${basePath}/images/treatment-hydrafacial.jpg`,
     benefits: ["Removes blackheads painlessly", "Plumps skin with antioxidants", "Perfect red-carpet ready glow"]
   },
   {
@@ -90,7 +92,7 @@ const TREATMENTS_DATA = [
     downtime: "None",
     price: "From $190",
     desc: "Cellular rejuvenation from within. A high-dose blend of Vitamin C, Glutathione, electrolytes, and essential minerals injected directly into the bloodstream to boost collagen production and skin glow.",
-    image: "/images/treatment-injectables.jpg",
+    image: `${basePath}/images/treatment-injectables.jpg`,
     benefits: ["Detoxifies liver & clear skin", "Rehydrates cells instantly", "Boosts natural energy levels"]
   }
 ];
@@ -141,7 +143,7 @@ export default function Home() {
     : TREATMENTS_DATA.filter(t => t.category === selectedCategory);
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-[#FAF8F5] relative selection:bg-gold/30 selection:text-forest">
+    <div className="min-h-screen flex flex-col font-sans bg-[#FAF8F5] relative overflow-x-hidden selection:bg-gold/30 selection:text-forest">
       
       {/* Floating Premium Navigation Bar */}
       <header className="sticky top-0 z-50 w-full px-4 sm:px-8 py-4 transition-all duration-300">
@@ -296,7 +298,7 @@ export default function Home() {
           <div className="lg:col-span-5 relative w-full aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-gold/10 group animate-fade-in-up delay-100">
             {/* Premium Spa Hero image */}
             <Image 
-              src="/images/luxury-spa-hero.jpg"
+              src={`${basePath}/images/luxury-spa-hero.jpg`}
               alt="AURA Sanctuary Reception"
               fill
               sizes="(max-width: 1024px) 100vw, 500px"
@@ -468,7 +470,7 @@ export default function Home() {
           {/* Images Gallery */}
           <div className="relative aspect-square sm:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-gold/20">
             <Image
-              src="/images/treatment-laser.jpg"
+              src={`${basePath}/images/treatment-laser.jpg`}
               alt="Medical skin treatment session"
               fill
               className="object-cover"
