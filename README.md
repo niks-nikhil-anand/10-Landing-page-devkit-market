@@ -1,49 +1,54 @@
-# Next.js Landing Page Devkit Market
+# DevKit Landing Page — 10 Next.js Landing Page Templates
 
-A production-ready collection of 10 responsive Next.js landing page templates for SaaS, AI agents, developer tools, B2B lead generation, cybersecurity, finance, legal services, telehealth, medical spas, and longevity brands. Deploy the entire repository as one static website with a dedicated live URL for every landing page.
+**DevKit Landing Page** is a production-ready collection of 10 responsive, conversion-focused landing page templates built with Next.js, React, TypeScript, and Tailwind CSS. The collection covers SaaS, artificial intelligence, developer tools, B2B sales, cybersecurity, finance, legal services, telehealth, medical aesthetics, longevity, and biohacking brands.
 
-## Landing page templates
+[Explore the live DevKit Landing Page collection](https://10-landing-page-devkit-market-marke-five.vercel.app/)
 
-| # | Template | Live route | Primary keywords |
+## Live landing page templates
+
+Each template is an independent Next.js application with its own design system, industry-focused content, metadata, responsive layout, and permanent live route.
+
+| # | Landing page template | Description | Live demo |
 |---:|---|---|---|
-| 1 | AI Multi-Agent Orchestration Platform | [`/ai-multi-agent-orchestration-platform/`](./ai-multi-agent-orchestration-platform/) | AI agent platform, multi-agent orchestration, autonomous AI agents |
-| 2 | B2B Sales Funnel & Lead Generation | [`/b2b-sales-funnel-lead-generation/`](./b2b-sales-funnel-lead-generation/) | B2B lead generation, sales funnel, sales automation |
-| 3 | Cybersecurity Compliance | [`/cybersecurity-compliance/`](./cybersecurity-compliance/) | SOC 2 compliance, ISO 27001, cybersecurity automation |
-| 4 | Developer API & Infrastructure Tools | [`/developer-api-infrastructure-tools/`](./developer-api-infrastructure-tools/) | developer tools, API platform, cloud infrastructure |
-| 5 | Fractional CFO & Financial Advisory | [`/fractional-cfo-financial-advisory/`](./fractional-cfo-financial-advisory/) | fractional CFO, financial advisory, business forecasting |
-| 6 | Intellectual Property & Patent Law | [`/intellectual-property-patent-law-firms/`](./intellectual-property-patent-law-firms/) | patent law firm, intellectual property, trademark protection |
-| 7 | Longevity & Biohacking DTC Brands | [`/longevity-biohacking-dtc-brands/`](./longevity-biohacking-dtc-brands/) | longevity supplements, biohacking, healthy aging |
-| 8 | Medical Spa & Aesthetics Clinics | [`/medical-spa-and-aesthetics-clinics/`](./medical-spa-and-aesthetics-clinics/) | medical spa website, aesthetics clinic, skin treatment |
-| 9 | SaaS Waitlist & Product Launch | [`/saas-waitlist-product-launch/`](./saas-waitlist-product-launch/) | SaaS waitlist, product launch, early access landing page |
-| 10 | Telehealth & Concierge Medicine | [`/telehealth-concierge-medicin/`](./telehealth-concierge-medicin/) | telehealth platform, concierge medicine, virtual healthcare |
+| 1 | AI Multi-Agent Orchestration Platform | AI agent platform for building, deploying, coordinating, and scaling autonomous multi-agent workflows. | [View AI agent landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/ai-multi-agent-orchestration-platform/) |
+| 2 | B2B Sales Funnel & Lead Generation | Conversion-focused B2B landing page for prospecting, sales automation, pipeline growth, and lead generation. | [View B2B sales landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/b2b-sales-funnel-lead-generation/) |
+| 3 | Cybersecurity Compliance | Security and compliance website for SOC 2, ISO 27001, automated controls, audit readiness, and risk management. | [View cybersecurity landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/cybersecurity-compliance/) |
+| 4 | Developer API & Infrastructure Tools | Technical product landing page for developer APIs, cloud infrastructure, integrations, observability, and platform tooling. | [View developer tools landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/developer-api-infrastructure-tools/) |
+| 5 | Fractional CFO & Financial Advisory | Professional services website for fractional CFOs, financial forecasting, strategic finance, and business advisory firms. | [View fractional CFO landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/fractional-cfo-financial-advisory/) |
+| 6 | Intellectual Property & Patent Law Firms | Authoritative legal landing page for patent attorneys, trademark protection, IP strategy, and intellectual property law firms. | [View patent law landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/intellectual-property-patent-law-firms/) |
+| 7 | Longevity & Biohacking DTC Brands | Editorial ecommerce experience for longevity supplements, biohacking products, wellness brands, and healthy-aging products. | [View longevity landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/longevity-biohacking-dtc-brands/) |
+| 8 | Medical Spa & Aesthetics Clinics | Premium medical spa website for cosmetic treatments, skincare services, aesthetics clinics, and appointment booking. | [View medical spa landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/medical-spa-and-aesthetics-clinics/) |
+| 9 | SaaS Waitlist & Product Launch | High-energy SaaS launch page for early access, product waitlists, startup launches, and audience growth. | [View SaaS launch landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/saas-waitlist-product-launch/) |
+| 10 | Telehealth & Concierge Medicine | Trusted digital health website for telemedicine, virtual healthcare, concierge medicine, and online patient care. | [View telehealth landing page](https://10-landing-page-devkit-market-marke-five.vercel.app/telehealth-concierge-medicin/) |
 
-> The `telehealth-concierge-medicin` route preserves the existing repository folder name for stable deployments.
+> The `telehealth-concierge-medicin` URL preserves the original repository folder name to keep existing deployments stable.
 
-## Features
+## Why use DevKit Landing Page?
 
-- Ten independently designed, conversion-focused landing pages
-- One repository, one build command, and one hosting project
-- Static HTML exports for fast delivery through a global CDN
-- Responsive layouts for desktop, tablet, and mobile screens
-- Unique page titles and descriptions for search engine optimization
-- Accessible semantic headings, navigation, forms, and calls to action
-- Interactive React components, animations, pricing sections, FAQs, and lead forms
-- Folder-based URLs with direct-page refresh support
-- Vercel configuration included and portable static output for other hosts
+- 10 independently designed Next.js landing pages
+- Conversion-focused hero sections, calls to action, pricing, FAQs, testimonials, forms, and feature sections
+- Responsive layouts for desktop, tablet, and mobile devices
+- Semantic HTML, accessible navigation, keyboard support, and visible focus states
+- Unique page titles, descriptions, headings, and industry-specific content
+- Fast static HTML exports suitable for global CDN delivery
+- Reusable React components and TypeScript source code
+- Folder-based URLs with direct navigation and page-refresh support
+- One npm workspace, one production build, and one Vercel deployment
 
 ## Technology stack
 
 - [Next.js](https://nextjs.org/) App Router
-- React and TypeScript
+- React
+- TypeScript
 - Tailwind CSS
 - Framer Motion
 - Lucide React icons
-- Static export deployment
 - npm workspaces
+- Static export deployment
 
-## Project architecture
+## Project structure
 
-The marketplace homepage and each template are independent Next.js workspaces. During the root production build, the marketplace is exported to the root of `dist/`, while every template is exported with its own `basePath` and copied into a matching subfolder.
+The homepage and all 10 templates are independent Next.js workspaces. The root production build exports the marketplace to `dist/` and copies every landing page into its matching route folder.
 
 ```text
 10-Landing-page-devkit-market/
@@ -58,25 +63,9 @@ The marketplace homepage and each template are independent Next.js workspaces. D
 ├── medical-spa-and-aesthetics-clinics/
 ├── saas-waitlist-product-launch/
 ├── telehealth-concierge-medicin/
-├── scripts/build-all.mjs
+├── scripts/
 ├── package.json
 └── vercel.json
-```
-
-The generated deployment has this URL structure:
-
-```text
-https://your-domain.com/
-https://your-domain.com/ai-multi-agent-orchestration-platform/
-https://your-domain.com/b2b-sales-funnel-lead-generation/
-https://your-domain.com/cybersecurity-compliance/
-https://your-domain.com/developer-api-infrastructure-tools/
-https://your-domain.com/fractional-cfo-financial-advisory/
-https://your-domain.com/intellectual-property-patent-law-firms/
-https://your-domain.com/longevity-biohacking-dtc-brands/
-https://your-domain.com/medical-spa-and-aesthetics-clinics/
-https://your-domain.com/saas-waitlist-product-launch/
-https://your-domain.com/telehealth-concierge-medicin/
 ```
 
 ## Getting started
@@ -92,56 +81,49 @@ https://your-domain.com/telehealth-concierge-medicin/
 npm install
 ```
 
-### Build every landing page
+### Build the complete collection
 
 ```bash
 npm run build
 ```
 
-The command builds the Next.js marketplace homepage and all 10 landing-page applications, then creates a combined static website in `dist/`.
+This command builds the marketplace homepage and all 10 Next.js landing pages into the combined `dist/` directory.
 
-For Vercel, the recommended project Root Directory is the repository root. If an existing Vercel project uses `marketplace/` as its Root Directory, the workspace-level Vercel configuration runs the same combined repository build and stages all ten template routes in `marketplace/deploy/` automatically.
-
-### Preview the complete marketplace locally
+### Run the complete local preview
 
 ```bash
 npm run dev
 ```
 
-This builds and serves the complete marketplace at `http://localhost:3001/`, including every landing page under its production folder route. Use this command when testing card navigation.
+Open [http://localhost:3001/](http://localhost:3001/) to test the homepage and every folder route from one local server.
 
-To work only on the marketplace homepage with Next.js hot reloading, use `npm run dev:marketplace`. The standalone homepage server does not serve the ten separate template workspaces.
-
-### Preview the production website locally
-
-After building, you can restart the combined preview without rebuilding:
+After an existing production build, restart the preview without rebuilding:
 
 ```bash
 npm run preview
 ```
 
-Open `http://localhost:3001/` to browse the landing page directory.
+For homepage-only development with Next.js hot reloading, run:
+
+```bash
+npm run dev:marketplace
+```
 
 ## Deploy to Vercel
 
-1. Push this repository to GitHub, GitLab, or Bitbucket.
-2. Import the repository into Vercel as a new project.
-3. Keep the repository root as the Vercel project root.
-4. Deploy without overriding the repository settings.
+The recommended Vercel Root Directory is the repository root.
 
-The included [`vercel.json`](./vercel.json) configures:
+1. Import the repository into Vercel.
+2. Keep the Root Directory set to the repository root.
+3. Use `npm run build` as the build command.
+4. Use `dist` as the output directory.
+5. Deploy.
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Trailing-slash URLs for static folder routing
-
-After deployment, the root URL displays the Next.js marketplace linking to all 10 live landing pages.
+The root [`vercel.json`](./vercel.json) already configures the build command, output directory, and trailing-slash routing. Existing Vercel projects configured with `marketplace/` as their Root Directory use [`marketplace/vercel.json`](./marketplace/vercel.json) to build and stage the complete collection automatically.
 
 ## Deploy to other static hosts
 
-The generated `dist/` directory can also be deployed to Netlify, Cloudflare Pages, GitHub Pages, Amazon S3, or any server capable of hosting static HTML, CSS, JavaScript, fonts, and images.
-
-Use these build settings:
+The generated `dist/` directory can be deployed to Netlify, Cloudflare Pages, GitHub Pages, Amazon S3, or any host capable of serving static HTML, CSS, JavaScript, fonts, and images.
 
 | Setting | Value |
 |---|---|
@@ -149,27 +131,40 @@ Use these build settings:
 | Build command | `npm run build` |
 | Publish directory | `dist` |
 
-## SEO notes
+## SEO features
 
-Every landing page has a focused title, description, semantic heading structure, and industry-specific copy. Before launching a production brand, replace demo company names and content, then add:
+The templates are structured to provide a strong technical foundation for search engine optimization:
 
-- A verified canonical production URL
-- Open Graph and social sharing images
-- A domain-level `robots.txt` and XML sitemap
+- Unique, descriptive page titles and meta descriptions
+- Industry-specific headings and search-intent-focused content
+- Semantic heading hierarchy and accessible HTML landmarks
+- Fast static pages that can be served through a CDN
+- Mobile-responsive layouts
+- Stable, descriptive folder URLs
+- Open Graph-ready metadata structure
+- Clear internal links from the marketplace homepage
+
+Before using a template for a production business, replace the demonstration content and add:
+
+- A verified canonical URL for the final domain
+- A domain-level `robots.txt` file and XML sitemap
+- Branded Open Graph and social-sharing images
+- Organization, Product, Service, FAQ, or LocalBusiness structured data where appropriate
 - Analytics and conversion tracking
-- Real organization, product, service, FAQ, or local-business structured data where appropriate
-- Production form handling and privacy disclosures
+- Real form processing, consent text, and privacy disclosures
 
-Avoid repeating keywords unnaturally. Search visibility is strongest when each page answers a distinct search intent with useful, original content.
+## Target keywords
 
-### Suggested repository topics
+`Next.js landing page templates` · `React landing page templates` · `TypeScript website templates` · `Tailwind CSS landing pages` · `SaaS landing page template` · `AI startup landing page` · `developer tools website template` · `B2B lead generation landing page` · `cybersecurity website template` · `fractional CFO website` · `patent law firm website` · `medical spa website template` · `telehealth landing page` · `biohacking ecommerce template` · `responsive landing page collection` · `Vercel static website`
 
-`nextjs` · `react` · `typescript` · `tailwindcss` · `landing-page` · `landing-page-template` · `saas-template` · `website-template` · `static-site` · `vercel`
+### Suggested GitHub repository topics
+
+`nextjs` · `react` · `typescript` · `tailwindcss` · `landing-page` · `landing-page-template` · `saas-template` · `website-template` · `static-site` · `vercel` · `developer-tools` · `ai-agents` · `seo-friendly`
 
 ## Customization
 
-Open the relevant workspace and update its `app/page.tsx`, components, global styles, images, and metadata. Keep the existing `basePath` in `next.config.ts` if you want the deployment URL to continue matching the workspace folder.
+Open the relevant workspace and update its `app/page.tsx`, React components, global styles, images, and metadata. Keep the existing `basePath` in each template's `next.config.ts` if the production URL should continue matching its folder name.
 
 ## License
 
-Add the license that applies to your project before distributing or selling these templates.
+Add the license that applies to the project before redistributing or selling the templates.
